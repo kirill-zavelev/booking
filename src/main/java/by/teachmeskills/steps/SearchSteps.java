@@ -15,8 +15,8 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class SearchSteps {
 
-    private SearchPage searchPage;
-    private ResultPage resultPage;
+    private final SearchPage searchPage;
+    private final ResultPage resultPage;
 
     public SearchSteps() {
         this.searchPage = new SearchPage();
