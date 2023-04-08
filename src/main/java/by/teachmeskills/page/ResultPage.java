@@ -11,12 +11,12 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class ResultPage {
 
-    private static final ElementsCollection HOTEL_FROM_DROPDOWN = $$(By.xpath("//div[@data-testid='title']"));
+    private static final ElementsCollection HOTELS = $$(By.xpath("//div[@data-testid='title']"));
     private static final String RATE = "//div[text()='%s']//ancestor::div[@data-testid='property-card']" +
             "//div[@data-testid='review-score']//div";
 
     public List<String> getHotelsName() {
-        return HOTEL_FROM_DROPDOWN.texts();
+        return HOTELS.texts();
     }
 
     public String getHotelRate(String hotelName) {
